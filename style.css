@@ -1,0 +1,57 @@
+:root {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f2f2;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 50px;
+}
+
+.headline,
+.newsletter-title,
+.newsletter-description {
+  margin: 10px 0;
+}
+
+.magazine-grid {
+  max-width: 500px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.article {
+  padding: 10px 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.featured {
+  grid-column: span 2;
+}
+.newsletter {
+  grid-column: span 2;
+  display: flex;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  body{
+    padding: 5px;
+  }
+  .magazine-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+}
